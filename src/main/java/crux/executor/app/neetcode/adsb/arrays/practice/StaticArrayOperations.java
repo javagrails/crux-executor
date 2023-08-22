@@ -35,4 +35,18 @@ public class StaticArrayOperations {
       readArray[readIndex] = 0;
     }
   }
+
+  /**
+   * Time complexity is O(1) because it put/write data in targeted index
+   *
+   * @param inputArray is the given array
+   * @param length is the total allocated sequential memory of given array
+   * @param itemCount is the number of item already in the array
+   * @param itemWantToAdd
+   */
+  public void addElementAtTheEnd(int[] inputArray, int length, int itemCount, int itemWantToAdd) {
+    if (itemCount < length) {
+      inputArray[itemCount] = itemWantToAdd;
+    }
+  }
 }
