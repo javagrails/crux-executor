@@ -39,5 +39,14 @@ public class PracticeRunner {
     heading("want to add 9 in the 3rd position of the array");
     operations.addElementAtTheEnd(endArray, length, itemCount, 9);
     console(endArray);
+
+    line();
+    heading("Remove element at the end of an array");
+    int[] removeArray = {1, 2, 3, 4};
+    int removeArrayLength = removeArray.length;
+    console(removeArray);
+    heading("Want to remove last item of the array, and it will be zero as default value");
+    operations.removeElementAtTheEnd(removeArray, removeArrayLength);
+    console(removeArray);
   }
 }

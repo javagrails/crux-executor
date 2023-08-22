@@ -49,4 +49,16 @@ public class StaticArrayOperations {
       inputArray[itemCount] = itemWantToAdd;
     }
   }
+
+  /**
+   * Time complexity is O(1)
+   *
+   * @param readArray given array
+   * @param removeArrayLength length of given array
+   */
+  public void removeElementAtTheEnd(int[] readArray, int removeArrayLength) {
+    if (removeArrayLength > 0) {
+      readArray[removeArrayLength - 1] = 0;
+    }
+  }
 }
