@@ -48,5 +48,22 @@ public class PracticeRunner {
     heading("Want to remove last item of the array, and it will be zero as default value");
     operations.removeElementAtTheEnd(removeArray, removeArrayLength);
     console(removeArray);
+
+    line();
+    heading("Add element at any valid index of the array");
+    int[] anyArray = new int[6];
+    anyArray[0] = 1;
+    anyArray[1] = 2;
+    anyArray[2] = 3;
+    anyArray[3] = 4;
+    anyArray[4] = 5;
+    int anyArrayLength = anyArray.length;
+    int targetIndex = 2;
+    int itemWantToAdd = 9;
+    console(anyArray);
+    heading(
+        "Want to add element 9 at index 2 which currently contains value 3 we will be 9 and remaining values will shift to the right");
+    operations.addElementAtTargetIndex(anyArray, anyArrayLength, targetIndex, itemWantToAdd);
+    console(anyArray);
   }
 }

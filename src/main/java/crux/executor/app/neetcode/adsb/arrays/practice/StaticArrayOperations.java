@@ -61,4 +61,35 @@ public class StaticArrayOperations {
       readArray[removeArrayLength - 1] = 0;
     }
   }
+
+  /**
+   * Time complexity is O(n)
+   *
+   * @param anyArray given array
+   * @param anyArrayLength given arry length
+   * @param targetIndex the index where we want to add the element
+   * @param itemWantToAdd the item we want to insert
+   */
+  public void addElementAtTargetIndex(
+      int[] anyArray, int anyArrayLength, int targetIndex, int itemWantToAdd) {
+    // length 6 target index 2
+    // index       {0,1,2,3,4,5}
+    // inputArray  {1,2,3,4,5,0}
+    // outputArray {1,2,9,3,4,5}
+
+    // Reverse loop way EASY
+    for (int index = anyArrayLength - 1; index > targetIndex - 1; index--) {
+      anyArray[index] = anyArray[index - 1];
+    }
+
+    // Forward loop way HARD but complexity sanme
+    /*int currentValue = anyArray[targetIndex];
+    for (int index = targetIndex; index < anyArrayLength - 1; index++) {
+      int nextValue = anyArray[index + 1];
+      anyArray[index + 1] = currentValue;
+      currentValue = nextValue;
+    }*/
+
+    anyArray[targetIndex] = itemWantToAdd;
+  }
 }
