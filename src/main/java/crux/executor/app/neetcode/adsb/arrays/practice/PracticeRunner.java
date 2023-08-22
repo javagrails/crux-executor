@@ -17,5 +17,11 @@ public class PracticeRunner {
     console(readArray);
     int value = operations.getElementOfIndex(readArray, readIndex);
     console(String.format("Array Index %s has Value %s\n", readIndex, value));
+
+    line();
+    heading("Remove an element by index 3, so value 5 will be zero");
+    readIndex = 3;
+    operations.removeElementOfIndex(readArray, readIndex);
+    console(readArray);
   }
 }

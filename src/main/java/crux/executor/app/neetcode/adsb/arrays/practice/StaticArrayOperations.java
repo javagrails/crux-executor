@@ -22,4 +22,17 @@ public class StaticArrayOperations {
     }
     return 0;
   }
+
+  /**
+   * Remove an array item like anyArray[index]=0 Time Complexity is O(1) means constant time
+   * operation & very efficient
+   *
+   * @param readArray given array
+   * @param readIndex the index to blank the value and it's default set zero
+   */
+  public void removeElementOfIndex(int[] readArray, int readIndex) {
+    if (readIndex < readArray.length) {
+      readArray[readIndex] = 0;
+    }
+  }
 }
