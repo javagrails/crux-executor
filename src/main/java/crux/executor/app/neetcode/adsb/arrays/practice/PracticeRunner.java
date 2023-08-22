@@ -65,5 +65,16 @@ public class PracticeRunner {
         "Want to add element 9 at index 2 which currently contains value 3 we will be 9 and remaining values will shift to the right");
     operations.addElementAtTargetIndex(anyArray, anyArrayLength, targetIndex, itemWantToAdd);
     console(anyArray);
+
+    line();
+    heading("Remove element at any valid index of the array");
+    int[] deleteArray = {1, 2, 3, 4, 5};
+    int deleteArrayLength = deleteArray.length;
+    int deleteIndex = 1;
+    console(deleteArray);
+    heading(
+        "Want to remove element 2 at index 1 and remaining values will shift to the left and blank indexes will fill with default value 0");
+    operations.removeElementAtTargetIndex(deleteArray, deleteArrayLength, deleteIndex);
+    console(deleteArray);
   }
 }

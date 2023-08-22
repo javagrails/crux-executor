@@ -92,4 +92,26 @@ public class StaticArrayOperations {
 
     anyArray[targetIndex] = itemWantToAdd;
   }
+
+  /**
+   * Time complexity is O(n)
+   *
+   * @param deleteArray is an array where we apply the operation
+   * @param deleteArrayLength is the length of the given array
+   * @param deleteIndex the targeted index which element we will delete or remove
+   */
+  public void removeElementAtTargetIndex(
+      int[] deleteArray, int deleteArrayLength, int deleteIndex) {
+    // length 5 target index 1
+    // index       {0,1,2,3,4}
+    // inputArray  {1,2,3,4,5}
+    // outputArray {1,3,4,5,5} or {1,3,4,5,0}
+
+    for (int index = deleteIndex; index < deleteArrayLength - 1; index++) {
+      deleteArray[index] = deleteArray[index + 1];
+    }
+    if (deleteIndex != deleteArrayLength - 1) {
+      deleteArray[deleteArrayLength - 1] = 0;
+    }
+  }
 }
