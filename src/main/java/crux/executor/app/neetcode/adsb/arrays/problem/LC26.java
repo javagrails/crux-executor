@@ -1,5 +1,11 @@
 package crux.executor.app.neetcode.adsb.arrays.problem;
 
+/**
+ * <strong>Easy</strong> Problem here
+ *
+ * <p><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array">26. Remove
+ * Duplicates from Sorted Array</a>
+ */
 public class LC26 {
 
   // int[] nums = {1, 1, 2}; // Output: 2, nums = [1,2,_]
