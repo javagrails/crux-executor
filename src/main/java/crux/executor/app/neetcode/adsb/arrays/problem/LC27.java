@@ -4,6 +4,7 @@ package crux.executor.app.neetcode.adsb.arrays.problem;
  * <strong>Easy</strong> Problem here
  *
  * <p><a href="https://leetcode.com/problems/remove-element">27. Remove Element</a>
+ * Corner case test with [] empty array or an array with one element like [3] or [2]
  */
 public class LC27 {
 
