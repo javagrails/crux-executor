@@ -1,9 +1,26 @@
 package crux.executor.app.neetcode.adsb.arrays.problem;
 
+import crux.executor.app.neetcode.utils.Util;
+
 public class ProblemRunner {
   public static void main(String[] args) {
     //fireLC26();
-    fireLC27();
+    //fireLC27();
+    fireLC1470();
+  }
+
+  private static void fireLC1470() {
+    LC1470 lc1470 = new LC1470();
+    //int[] nums = {2,5,1,3,4,7};
+    //int n = 3;
+    int[] nums = {1,2,3,4,4,3,2,1};
+    int n = 4;
+    //int[] nums = {1,1,2,2};
+    //int n = 2;
+
+    Util.console(nums);
+    int[] shuffle = lc1470.shuffle(nums, n);
+    Util.console(shuffle);
   }
 
   private static void fireLC27() {
