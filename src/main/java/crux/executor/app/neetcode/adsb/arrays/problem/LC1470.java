@@ -18,9 +18,17 @@ public class LC1470 {
 
   public int[] shuffle(int[] nums, int n) {
     int[] answer = new int[2*n];
-    for (int index = 0; index < n; index++) {
+    // Solution one
+    /*for (int index = 0; index < n; index++) {
       answer[2*index] = nums[index];
       answer[(2*index)+1] = nums[index+n];
+    }*/
+
+    // Solution 2
+    int position = 0;
+    for (int index = 0; index < n; index++) {
+      answer[position++] = nums[index];
+      answer[position++] = nums[index+n];
     }
     return answer;
   }
