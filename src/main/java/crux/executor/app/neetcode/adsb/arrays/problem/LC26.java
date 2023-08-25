@@ -19,6 +19,12 @@ public class LC26 {
   // {1, 1, 2}
   // {1, 1, 2}
 
+  /**
+   * Time complexity: O(n)
+   * Space complexity: N\A
+   * @param nums
+   * @return count - the number of unique items in the given array
+   */
   public int removeDuplicates(int[] nums) {
     int count = 1;
     int next = 0;

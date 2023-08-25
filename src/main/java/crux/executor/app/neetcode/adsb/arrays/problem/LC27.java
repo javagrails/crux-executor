@@ -15,6 +15,13 @@ public class LC27 {
   // = [0,1,4,0,3,_,_,_]
   // int elementToRemove = 2;
 
+  /**
+   * Time complexity: O(n)
+   * Space complexity: N\A
+   * @param nums
+   * @param elementToRemove
+   * @return first - number of not matched items of the array
+   */
   public int removeElement(int[] nums, int elementToRemove) {
     int first = 0;
     for (int index = 0; index < nums.length; index++) {

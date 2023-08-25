@@ -22,7 +22,7 @@ public class LC1470 {
    * https://leetcode.com/problems/shuffle-the-array/solutions/3956445/analysis
    * @param nums
    * @param n
-   * @return
+   * @return answer - the new array where data places according to the given instructions
    */
   public int[] shuffle(int[] nums, int n) {
     int[] answer = new int[2*n];
