@@ -1,4 +1,4 @@
-package crux.executor.app.neetcode.adsb.linkedlists.problem;
+package crux.executor.app.neetcode.aa.example.problem;
 
 public class ProblemRunner {
   public static void main(String[] args) {
