@@ -16,6 +16,14 @@ public class LC1470 {
   // The first starting at the beginning and the other starting at (n+1)th position.
   // Alternate between them and create the new array.
 
+  /**
+   * Time complexity: O(n)
+   * Space complexity: O(n)
+   * https://leetcode.com/problems/shuffle-the-array/solutions/3956445/analysis
+   * @param nums
+   * @param n
+   * @return
+   */
   public int[] shuffle(int[] nums, int n) {
     int[] answer = new int[2*n];
     // Solution one
