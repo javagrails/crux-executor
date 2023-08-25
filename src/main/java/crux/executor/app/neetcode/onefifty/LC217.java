@@ -15,12 +15,12 @@ public class LC217 {
   // int[] nums = {1,1,1,3,3,4,3,2,4,2}; Output: true
 
   /**
-   * Time complexity: O(n)
-   * Space complexity: O(n)
+   * Time complexity: O(n) Space complexity: O(n)
+   *
    * @param nums
    * @return
    */
-  public static boolean containsDuplicate(int[] nums) {
+  public boolean containsDuplicate(int[] nums) {
     Set<Integer> set = new HashSet<>();
     for (int index = 0; index < nums.length; index++) {
       if (set.contains(nums[index])) {

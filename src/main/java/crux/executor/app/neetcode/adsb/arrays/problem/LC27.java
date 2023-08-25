@@ -3,8 +3,8 @@ package crux.executor.app.neetcode.adsb.arrays.problem;
 /**
  * <strong>Easy</strong> Problem here
  *
- * <p><a href="https://leetcode.com/problems/remove-element">27. Remove Element</a>
- * Corner case test with [] empty array or an array with one element like [3] or [2]
+ * <p><a href="https://leetcode.com/problems/remove-element">27. Remove Element</a> Corner case test
+ * with [] empty array or an array with one element like [3] or [2]
  */
 public class LC27 {
 
@@ -16,8 +16,8 @@ public class LC27 {
   // int elementToRemove = 2;
 
   /**
-   * Time complexity: O(n)
-   * Space complexity: N\A
+   * Time complexity: O(n) Space complexity: N\A
+   *
    * @param nums
    * @param elementToRemove
    * @return first - number of not matched items of the array
