@@ -11,8 +11,6 @@ public class DynamicArray {
   // increaseSize
   // more on
 
-  public DynamicArray() {}
-
   public DynamicArray(int capacity, int length, int[] array) {
     this.capacity = capacity;
     this.length = length;
