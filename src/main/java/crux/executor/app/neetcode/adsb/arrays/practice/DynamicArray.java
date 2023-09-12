@@ -13,9 +13,8 @@ public class DynamicArray {
 
   public DynamicArray() {}
 
-  public DynamicArray(int capacity, int length, int[] array) {
+  public DynamicArray(int capacity, int length) {
     this.capacity = capacity;
     this.length = length;
-    this.array = array;
   }
 }
